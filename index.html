@@ -1,0 +1,772 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIV WEBSITE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="tailwind.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily:{
+            sans: ['Poppins'],
+          },
+          colors: {
+           primary:'#E9E5DB',
+           secondary:'#F8F6F6' , 
+           third :'#260D1C',
+          },
+
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-secondary">
+  <nav class="p-5 bg-primary shadow rounded-md md:flex md:items-center md:justify-between">
+    <div class=" flex justify-between items-center">
+    <span class="text-1xl font-sans font-bold text-third cursor-pointer">
+        <img class="h-10 inline"src="img/Logo TIV.png" alt="">
+       TUTTO IN VENTISETTE 
+      
+    </span>
+    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+      <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+    </span>
+    </div>
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto 
+    md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+    duration-500">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#about" class="text-x1 hover:text-primary duration-700">About</a>
+        </li>
+        <li class="mx-4  my-6 md:my-0">
+            <a href="#members" class="text-x1 hover:text-primary duration-700">Members</a>
+        </li>
+        <li class="mx-4  my-6 md:my-0">
+            <a href="#" class="text-x1 hover:text-primary duration-700">Our Journey</a>
+        </li>
+        <button class=" ml-3 p-2 bg-third rounded-md text-primary font-sans">
+           Donate here please :)
+        </button>
+        
+    </ul>
+  </nav>
+
+  <!-- header -->
+  <section class="p-9 mx-3 my-3">
+    <div class="flex justify-center items-center">
+      <img class="w-20 h-auto" src="img/Logo TIV.png" alt="">
+      <img class="w-40 h-30" src="img/logoNassa.png" alt="">
+      
+
+    </div>
+   
+     <h1 class="text-6xl font-sans font-bold md:text-8xl 2xl:text-9xl text-center mt-7 text-third">OSIS NASSA <br><span class="font-sans mt-2">JUNIOR HIGH SCHOOL</span></h1>
+     <br>
+     <h3 class="text-4xl md:text-5xl font-sans font-medium text-center mt-5 animate-bounce">Periode 2021-2022</h3>
+     <div class="flex justify-center my-5">
+      <button class=" ml-3 p-2 px-7 items-center bg-third rounded-lgt text-primary font-sans text-3xl">
+        Learn more 
+     </button>
+     </div>
+     
+  </section>
+
+  <!-- about us -->
+  <section id="about"class="p-9 my-5">
+
+    <h3 class="text-4xl md:text-5xl font-sans font-bold text-center mt-5">Who we are !</h3>
+    <div class="flex flex-wrap items-center">
+      <div class="w-full md:w-1/2 lg:w-2/3 xl:w-3/4 p-4 rounded-xl mt-6">
+        <img class="border-dashed border-third border-8" src="img/sertijab.png" alt="Your Image" class="w-full h-auto">
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
+        <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt porro perspiciatis harum cumque. Iusto assumenda nostrum itaque ex illum.</p>
+      </div>
+      
+    </div>
+     </div>
+     
+  </section>
+  <div class=" text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-primary rounded-lg">
+      
+    <div class="p-7 my-3 ml-4 mr-4 font-sans"><h3 class="text-xl">Instagram post<br><span class="text-5xl font-bold mt-2">87+</span></h3>
+    </div>
+    <div class="p-7 my-3 ml-4 mr-4 font-sans"><h3 class="text-xl">Events<br><span class="text-5xl font-bold mt-2">19+</span></h3>
+    </div>
+    <div class="p-7 my-3 ml-4 mr-4 font-sans"><h3 class="text-xl">Program <br><span class="text-5xl font-bold mt-2">15+</span></h3>
+    </div>
+    <div class="p-7 my-3 ml-4 mr-4 font-sans"><h3 class="text-xl">External Event<br><span class="text-5xl font-bold mt-2">1</span></h3>
+    </div>
+    
+   
+    
+    
+    
+    
+    
+    <!-- Add more columns as needed -->
+  </div>
+ <!-- section managers -->
+  <section class="">
+    <h3 class="text-4xl md:text-5xl font-sans font-bold text-center mt-5 mb-5">Our Coach</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div class=" p-9 md:p-9 ">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full md:w-50 lg:w-50 xl:w- p-2 mt-5 flex md:justify-center md:items-center">
+            <img class="w-full h-auto rounded-xl shadow" src="img/Faroh.png" alt="Your Image">
+          </div>
+          <h3 class="text-4xl md:text-5xl font-sans font-bold mt-5 mb-5">Faroh Al-afsoh</h3>
+          <p class="text-xl justify-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt porro perspiciatis harum cumque. Iusto assumenda nostrum itaque ex illum.</p>
+          
+           <div class="mt-4 md: mx-auto">
+            <button class=" ml-3 p-2 bg-third rounded-lg text-primary font-sans font-xl">
+              Donate here please :)
+           </button>
+           </div>
+          
+        </div>
+    
+       
+      </div>
+
+      
+  
+    
+  
+    </div>
+   
+   
+
+   
+
+
+    
+    
+
+  </section>
+  <!-- section members -->
+
+  <section id="members" class="p-9 my-5">
+    <h3 class="text-4xl md:text-5xl font-sans font-bold text-center mt-5 mb-5">Meet the members</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 font-sans text-third">
+      <!-- Column 1 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/ketua.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl">Arradhina Suranggana B</p>
+        <p class="text-slate-500 text-center">Chief</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md hover:animate-pulse">
+            <a href="https://www.instagram.com/arradhinasrb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Learn more</a>
+         </button>
+         </div>
+      </div>
+      <!-- vice chied c2  -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/wakil.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl">Ashima Bashira Genada</p>
+        <p class="text-slate-500 text-center">Vice Chief</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://instagram.com/ashimagnd/?img_index=3">Learn more</a>
+         </button>
+         </div>
+      </div>
+      <!-- secretary c3 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/sekretaris.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl">Vianka Naifa Nugroho</p>
+        <p class="text-slate-500 text-center">Secretary</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/viankanaifa/?img_index=4">Learn more</a>
+         </button>
+         </div>
+      </div>
+      <!-- treasuary c4 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bendahara .png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl">Nayla Kirania Putri</p>
+        <p class="text-slate-500 text-center">Treasuary</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/sseirin_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Learn more</a>
+         </button>
+         </div>
+      </div>
+      <!-- sector 1 c5 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 1.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Nabhila & Rahma </p>
+        <p class="text-slate-500 text-center">Sector 1 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVv1DBLSGz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      <!-- Column 2 -->
+      </div>
+      <!-- sector 2  -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 2.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Jessica & <br> Sora  </p>
+        <p class="text-slate-500 text-center">Sector 2 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVvwhkLbxJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      
+      </div>
+      <!-- sector 3 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 3.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Rayyan,Satrio & Azziru </p>
+        <p class="text-slate-500 text-center">Sector 3 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVvi45LgQj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      <!-- sector 4  -->
+      </div>
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 4.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Indhi, Abyaz & Haikal</p>
+        <p class="text-slate-500 text-center">Sector 4 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVvbdsLw8z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+   
+      </div>
+         <!-- sector 5-->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 5.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Fattan & Nala</p>
+        <p class="text-slate-500 text-center">Sector 5 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVvJFpLFi7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      <!-- Column 2 -->
+      </div>
+
+      <!-- sector 6 -->
+      
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 6.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Nasywa & Rafa </p>
+        <p class="text-slate-500 text-center">Sector 6 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVvAZFL2WN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+     
+      </div>
+
+      <!-- sector 7 -->
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 7.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Daiva Bramasta</p>
+        <p class="text-slate-500 text-center">Sector 7 officer</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/daivadabram?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      
+      </div>
+
+      <!-- sector 8 -->
+
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 8 .png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-lg font-sans">Neisa Afia </p>
+        <p class="text-slate-500 text-center">Sector 8 officer</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVulbNr1B1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      <!-- Column 2 -->
+      </div>
+      
+      <div class="p-4 bg-white border rounded-xl shadow">
+        <div class="m-3">
+          <img src="img/bidang 9.png" alt="Image 1" class="w-full h-32 object-contain md:object-cover mb-4 rounded-md border-dashed">
+        <p class="text-gray-800 text-center text-xl font-sans">Farah & Enes</p>
+        <p class="text-slate-500 text-center">Sector 9 officers</p>
+        </div>
+        
+        <hr>
+        <div class="flex justify-center my-5">
+          <button class=" ml-2 p-2 items-center bg-third rounded-md text-primary font-sans text-md">
+            <a href="https://www.instagram.com/p/CeVuOfeLYx9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Learn more</a>
+         </button>
+         </div>
+     
+    
+      <!-- Column 2 -->
+      </div>
+      
+
+
+
+
+
+        
+    </div>  
+
+  </section>
+  
+  
+
+  <!-- Section Timeline -->
+   <section class="w-full p-9 my-5 bg-white shadow-xl shadow-white bg-third">
+    <h3 class="text-4xl md:text-5xl font-sans font-bold text-center mt-5 mb-5">History</h3>
+    
+
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9">
+      <!-- stack1  -->
+       <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+           <h1 class="text-slate-700 text-sans text-md">November 2021</h1>
+           <h1 class="text-third text-sans text-2xl font-semibold">Entering Service</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">After the fall of the 26th Osis Nassa JHS, power vacuum emerge and that power vacuum created an oppurtunity for the 27th OSIS Nassa JHS to rise and take over the authority.  </p>
+        </div>
+
+        
+       </div>
+       <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+      <div class="col-span-4 w-full h-full"></div>
+
+      <!-- stack 2  -->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">20th December 2021</h1>
+          <h1 class="text-third text-sans text-lg md:2xl font-semibold">Guest Teacher kak Faraas Muhidar "how to love ourself"</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">If you hate yourself dont bother to ever witness this seminar  </p>
+        </div>
+
+        
+       </div>
+
+       <!-- stack3  -->
+       <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+           <h1 class="text-slate-700 text-sans text-md">20th June 2022</h1>
+           <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Classmeeting Junior High School</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">This event was held because the people whants it, they demand it like a starving rats, </p>
+        </div>
+
+        
+       </div>
+       <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+      <div class="col-span-4 w-full h-full"></div>
+
+       <!-- stack 4 -->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">15th July - 19th July 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Mpls (Masa Perkenalan Lingkungan Sekolah)</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+       <!-- stack5  -->
+       <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+           <h1 class="text-slate-700 text-sans text-md">16th August - 18th August 2022</h1>
+           <h1 class="text-third text-sans text-lg md:2xl  font-semibold">NSAC (NASSA 17TH OF AUGUST COMPETITION)</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+       <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+      <div class="col-span-4 w-full h-full"></div>
+       
+      <!-- stack 6-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">12th September 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Ajang Ilmiah </h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+       <!-- stack 7  -->
+       <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+           <h1 class="text-slate-700 text-sans text-md">No Data </h1>
+           <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Toga (Tanaman Obat Keluarga)</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+       <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+      <div class="col-span-4 w-full h-full"></div>
+
+      <!-- stack 8-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">3rd October 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold"> Guest Teacher Kak Irma Gustiana "self kindness"</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+       <!-- stack 9 -->
+       <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+           <h1 class="text-slate-700 text-sans text-md">5th November 2022 </h1>
+           <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Guest Teacher Yogi Jiwandono "DKV"</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+       <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+      
+   
+      
+
+      
+
+       
+      
+
+
+
+
+       
+      
+
+      
+
+      
+       
+
+     
+
+    </div>
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9">
+
+      <!-- stack 10-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">24th October 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Ajang Kretivitas </h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+         <!-- stack 11 -->
+         <div class="col-span-4 w-full h-full font-medium">
+          <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+             <h1 class="text-slate-700 text-sans text-md">2nd-3rd November 2022</h1>
+             <h1 class="text-third text-sans text-lg md:2xl  font-semibold">LDKS (Latihan Dasar Kepemimpinan Siswa)</h1>
+             <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+          </div>
+  
+          
+         </div>
+         <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+          <div class="h-full w-1 bg-primary "></div>
+          <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+        </div>
+
+        
+        
+     
+        
+    </div>   
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9">
+
+      <!-- stack 12-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">7th November 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">LDKO (Latihan Dasar kepemimpinan OSIS)</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+         <!-- stack 13 -->
+         <div class="col-span-4 w-full h-full font-medium">
+          <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+             <h1 class="text-slate-700 text-sans text-md">11th November 2022</h1>
+             <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Debat pemilihan Ketua OSIS </h1>
+             <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+          </div>
+  
+          
+         </div>
+         <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+          <div class="h-full w-1 bg-primary "></div>
+          <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+        </div>
+
+        
+        
+     
+        
+    </div>   
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9">
+
+      <!-- stack 14-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">30th November 2022</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Rapat Anggota Tahunan</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+         <!-- stack 13 -->
+         <div class="col-span-4 w-full h-full font-medium">
+          <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+             <h1 class="text-slate-700 text-sans text-md">9th December 2022</h1>
+             <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Serah terima jabatan OSIS 27 to OSIS 28 </h1>
+             <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+          </div>
+  
+          
+         </div>
+         <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+          <div class="h-full w-1 bg-primary "></div>
+          <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+        </div>
+
+        
+        
+     
+        
+    </div>   
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9">
+
+      <!-- stack 12-->
+      <div class="col-span-4 w-full h-full"></div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+        <div class="h-full w-1 bg-primary "></div>
+        <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+      </div>
+
+ 
+
+      <div class="col-span-4 w-full h-full font-medium">
+        <div class="w-full h-full bg-primary rounded-md shadow-md p-5 md:pl-4">
+          <h1 class="text-slate-700 text-sans text-md">28th January 2023</h1>
+          <h1 class="text-third text-sans text-lg md:2xl  font-semibold">Helo (Help Each Other)</h1>
+           <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+        </div>
+
+        
+       </div>
+
+         <!-- stack 13 -->
+         <div class="col-span-4 w-full h-full font-medium">
+          <div class="w-full h-full bg-primary rounded-md shadow-md  p-5 md:pl-4">
+             <h1 class="text-slate-700 text-sans text-md">28th January 2023-now</h1>
+             <h1 class="text-third text-sans text-lg md:2xl  font-semibold">End of service</h1>
+             <p class="text-slate-500 sm:text-xs text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam, ducimus ipsam esse adipisci recusandae modi debitis optio aperiam ratione!</p>
+          </div>
+  
+          
+         </div>
+         <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+          <div class="h-full w-1 bg-primary "></div>
+          <div class=" absolute w-6 h-6 rounded-full bg-primary z-10 text-third text-center ">1</div>
+        </div>
+
+        
+        
+     
+        
+    </div>   
+
+      
+      
+
+   </section>
+
+  
+
+  
+   
+</body>
+<footer class="bg-third p-9 mt-5">
+
+  <h3 class="text-lgmd:text-xl font-sans text-center mt-5 mb-5 text-primary">Created by Sora Algamar</h3>
+
+</footer>
+
+
+</html>
